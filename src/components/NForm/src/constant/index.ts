@@ -78,9 +78,9 @@ export const TYPE_MAP_COMPONENT = {
   'tree-select': {
     name: 'NTreeSelect',
     placeholder: 2
-  },
-  'upload-image': {
-    name: 'NUpload',
-    placeholder: 3
   }
+  // 'upload-image': {
+  //   name: 'NUpload',
+  //   placeholder: 3
+  // }
 }

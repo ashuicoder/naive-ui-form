@@ -13,7 +13,7 @@ import {
   NButton
 } from 'naive-ui'
 
-import ImageUpload from '@/components/ImageUpload/src/index.vue'
+// import ImageUpload from '@/components/ImageUpload/src/index.vue'
 import { useFormat } from './index'
 
 import type { Slots, Ref } from 'vue'
@@ -81,11 +81,11 @@ export function useRender(formData: Ref<Recordable>, slots: Slots, emit: Instanc
       return <NTimePicker v-model:formatted-value={formData.value[item]} {...formDescItem.props}></NTimePicker>
     }
 
-    if (formDescItem.type === 'upload-image') {
-      return (
-        <ImageUpload value={formData.value[item]} onUpdate:value={(val) => (formData.value[item] = val)}></ImageUpload>
-      )
-    }
+    // if (formDescItem.type === 'upload-image') {
+    //   return (
+    //     <ImageUpload value={formData.value[item]} onUpdate:value={(val) => (formData.value[item] = val)}></ImageUpload>
+    //   )
+    // }
 
     return shouldRenderCompenent
   }

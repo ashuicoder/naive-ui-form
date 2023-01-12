@@ -14,6 +14,7 @@
 import { NConfigProvider, zhCN } from 'naive-ui'
 import { NaiveUiForm, type Recordable } from '@/components/NForm'
 import type { IFormDesc } from '@/components/NForm'
+
 import { ref } from 'vue'
 
 const formDesc = ref<IFormDesc>({
