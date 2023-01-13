@@ -29,3 +29,8 @@ export interface IFormDesc {
 }
 
 export type IConfig = {}
+
+export type IFormComponent = {
+  submit(): void
+  reset(): void
+}

@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "naive-ui-form": {
+      "signature": "1cabec395855c8ce37617a3917d41ea3",
+      "file": true
+    }
+  }
+}
