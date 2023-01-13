@@ -8,9 +8,6 @@
         labelPlacement="left"
         @submit="handleSubmit"
       >
-        <template #text="{ data, key }">
-          <input type="text" v-model="data.value[key]" />
-        </template>
       </naive-ui-form>
 
       <button @click="submit">手动提交</button>
@@ -20,12 +17,12 @@
 </template>
 
 <script setup lang="tsx">
-import { NConfigProvider, zhCN } from 'naive-ui'
-import { NaiveUiForm, type Recordable } from '@/components/NForm'
-import type { IFormDesc, IFormComponent } from '@/components/NForm'
-
 import { ref } from 'vue'
-// import type { IFormDesc, Recordable } from 'naive-ui-form'
+import { NConfigProvider, zhCN } from 'naive-ui'
+import { NaiveUiForm } from '@/components/NForm'
+import type { IFormDesc, IFormComponent, Recordable } from '@/components/NForm'
+
+// import type { IFormDesc, Recordable, IFormComponent } from 'naive-ui-form'
 // import { NaiveUiForm } from 'naive-ui-form'
 
 const formRef = ref<IFormComponent | null>(null)
@@ -34,7 +31,7 @@ const formDesc = ref<IFormDesc>({
     type: 'input',
     label: '姓名',
     required: true,
-    tip: 'dhksdahfkdshk',
+    tip: '2222',
     gridItem: {
       span: 12
     }

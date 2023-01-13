@@ -1,10 +1,10 @@
 {
   "name": "naive-ui-form",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "ashuicoder",
   "private": false,
   "types": "./dist/src/components/NForm/index.d.ts",
-  "main": "./dist/lib.umd.js",
+  "main": "./dist/lib.es.js",
   "keywords": [
     "vue3",
     "component",
@@ -55,5 +55,9 @@
     "vite": "^4.0.0",
     "vite-plugin-dts": "^1.7.1",
     "vue-tsc": "^1.0.12"
+  },
+  "peerDependencies": {
+    "naive-ui": ">=2.0.0",
+    "vue": ">=3.2.0"
   }
 }
