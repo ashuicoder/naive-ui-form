@@ -35,12 +35,11 @@
   },
   "dependencies": {
     "axios": "^1.2.2",
-    "naive-ui-form": "file:.yalc/naive-ui-form",
     "vue": "^3.2.45"
   },
   "peerDependencies": {
     "naive-ui": ">=2.0.0",
     "vue": ">=3.2.0"
   },
-  "yalcSig": "e553fa91c7f2b3bd0dc017cd78020271"
+  "yalcSig": "97653833f466967e7925a4e6de4229da"
 }

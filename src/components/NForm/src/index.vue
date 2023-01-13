@@ -65,7 +65,8 @@ export default defineComponent({
     NForm,
     NGrid,
     NGridItem,
-    NSpace
+    NSpace,
+    NText
   },
   props: {
     value: {
