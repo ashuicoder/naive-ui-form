@@ -1,6 +1,6 @@
 {
   "name": "naive-ui-form",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "author": "ashuicoder",
   "private": false,
   "types": "./dist/src/components/NForm/index.d.ts",

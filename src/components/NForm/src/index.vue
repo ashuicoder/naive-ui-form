@@ -1,5 +1,5 @@
 <script lang="tsx">
-import { defineComponent, computed, ref, Fragment, resolveComponent, h, defineExpose } from 'vue'
+import { defineComponent, computed, ref, Fragment, resolveComponent, h } from 'vue'
 
 import {
   NAutoComplete,
@@ -155,7 +155,6 @@ export default defineComponent({
       }
     })
     const formRef = ref<InstanceType<typeof NForm> | null>(null)
-
     const renderDynamicComponent = (formDescItem: IFormDescItem, item: string) => {
       if (typeof formDescItem.render === 'function') {
         return formDescItem.render(formData, item)
@@ -316,7 +315,9 @@ export default defineComponent({
       })
     }
     const reset = () => {
-      formData.value = {}
+      for (const key in formData.value) {
+        formData.value[key] = null
+      }
       formRef.value?.restoreValidation()
       emit('reset')
     }

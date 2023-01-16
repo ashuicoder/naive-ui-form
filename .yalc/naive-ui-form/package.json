@@ -1,6 +1,6 @@
 {
   "name": "naive-ui-form",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "author": "ashuicoder",
   "private": false,
   "types": "./dist/src/components/NForm/index.d.ts",
@@ -41,5 +41,5 @@
     "naive-ui": ">=2.0.0",
     "vue": ">=3.2.0"
   },
-  "yalcSig": "97653833f466967e7925a4e6de4229da"
+  "yalcSig": "1b0dc55ef3d2a3edb4cdc6f3c6db0977"
 }
